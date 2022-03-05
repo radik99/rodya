@@ -1,0 +1,105 @@
+.header
+    background: linear-gradient(#000000b8,#000000b8), url(../img/header__images.png)
+    background-repeat: no-repeat
+    min-height: 100vh
+    background-size: cover
+    font-family: 'Montserrat'
+    padding-bottom: 60px
+    @media screen and ( max-width: 700px )
+        max-width: 100%
+
+.top
+    display: flex
+    justify-content: space-between
+    padding: 50px 40px
+    @media screen and ( max-width:992px  )
+        vertical-align: middle
+        align-items: center
+
+.logo
+    display: flex
+
+.logo__img
+    width: 40px
+    height: 40px
+    margin-top: -10px
+
+.logo__text
+    color: white
+    margin-left: 20px
+    margin-top: -1px
+    text-decoration: none
+    cursor: pointer
+    font-size: 25px
+    font-weight: bold
+
+.navbar
+    display: flex
+    transition: 1s
+    @media screen and ( max-width:992px )
+        font-weight: bold
+        font-size: 30px
+        text-align: center
+        flex-direction: column
+        justify-content: center
+        position: fixed
+        top: -150%
+        left: 0
+        width: 100%
+        min-height: 100%
+        background-color: #5c5c5c
+        &.is-active
+            top: 0
+
+.nav__search
+    @media screen and ( max-width:992px )
+        width: 30px
+
+.nav__link
+    margin-right: 25px
+    color: white
+    text-decoration: none
+    cursor: pointer
+    @media screen and ( max-width:992px )
+        margin: 30px 0
+    @media screen and (orientation: landscape) and ( max-width:992px )
+        margin: 10px 0
+
+.nav:hover
+    color: #ccc
+
+.logo__text:hover
+    color: #ccc
+
+.header__block
+    text-align: center
+    margin-top: 100px
+
+.header__main--text
+    max-width: 800px
+    margin: 0 auto
+    font-size: 70px
+    color: #fff
+    @media screen and ( max-width: 768px  )
+        max-width: 600px
+    @media screen and ( max-width:600px  )
+        font-size: 50px
+        line-height: 60px
+
+.color__text--header
+    color: #ed6950
+
+.header__text
+    color: #5c5c5c
+    margin-bottom: 30px
+
+.btn
+    text-decoration: none
+    background-color: #ffc74a
+    color: #b98000
+    cursor: pointer
+    font-size: 12px
+    padding: 15px 30px
+    border: 1px double #765405
+    border-radius: 50px
+    display: inline-block
